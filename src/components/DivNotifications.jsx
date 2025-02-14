@@ -1,16 +1,17 @@
 import React from "react";
 
-import icon_close from "./../sources/icons/icon-close.svg";
+// Notificación
+import Notification from "./Notification";
 
-export default function DivNotifications () {
+export default function DivNotifications (props) {
     return (
         <div className="div-notifications" id="divNotifications">
-            {/* <div className="notification">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur.
-                </p>
-                <img src={icon_close} alt="" title="Cerrar" className="icon-close-notification"/>
-            </div> */}
+            {props.arrayNotifications.map((turno, index) => (
+                <Notification
+                    key={index}  // Usar el índice como key
+                    text={turno}  // Pasar el turno directamente como texto
+                />
+            ))}
         </div>
     );
 }

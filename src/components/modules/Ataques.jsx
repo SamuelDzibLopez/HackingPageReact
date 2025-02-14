@@ -1,5 +1,15 @@
 import React from "react";
-import icon_directory_pink from "./../../sources/icons/icon-directory-pink.svg";
+
+//Ataques
+import Phishing from "./attacks/Phishing";
+import DDoSYDoS from "./attacks/DDoSYDoS";
+import SQLInjection from "./attacks/SQLInjection";
+import FuerzaBruta from "./attacks/FuerzaBruta";
+import Ransomware from "./attacks/Ransomware";
+import ManInTheMiddle from "./attacks/ManInTheMiddle";
+import Malware from "./attacks/Malware";
+import XSS from "./attacks/XSS";
+
 import icon_directory from "./../../sources/icons/icon-directory.svg";
 
 export default function Ataques () {
@@ -95,36 +105,31 @@ export default function Ataques () {
                 A <span className="span-white">continuación</span>, se describe <span className="span-pink">información</span> de cada uno de los <span className="span-pink">ataques</span> listados:
             </p>
 
+            <Phishing/>
 
-            <h3 className="span-blue" id="phishing">
-                <img className="icon-subtitle" src={icon_directory_pink} alt=""/>
-                <span className="span-pink"> Phishing.<span className="span-pink cursor">_</span>
-                </span>
-            </h3>
-            
+            <DDoSYDoS/>
+
+            <SQLInjection/>
+
+            <FuerzaBruta/>
+
+            <Ransomware/>
+
+            <ManInTheMiddle/>
+
+            <Malware/>
+
+            <XSS/>
+
             <p>
-                Uso de <span className="span-blue">correos electrónicos, mensajes falsificados</span> u <span className="span-blue">otro medio</span> para <span className="span-pink">engañar</span> a las víctimas y <span className="span-white">obtener credenciales</span> o <span className="span-white">datos
-                sensibles.</span>
             </p>
 
             <p>
-                <b className="span-yellow">Herramientas:</b> <a href="#" className="span-blue">Zphisher.</a>
+                Existen muchos más <span className="span-pink">tipos de ataques,</span> pero aqui se encuentran los <span className="span-white">principales.</span>
             </p>
 
+            <hr  className="cursor"></hr>
 
-            <h3 className="span-blue" id="DDoSyDoS">
-                <img className="icon-subtitle" src={icon_directory_pink} alt=""/>
-                <span className="span-pink"> Denegación de Servicios (DoS y DDoS).<span className="span-pink cursor">_</span>
-                </span>
-            </h3>
-            
-            <p>
-                <span className="span-pink">Saturación</span> de un <span className="span-blue">servidor, red</span> o <span className="span-blue">sistema</span> con <span className="span-white">tráfico masivo</span> para hacerlo <span className="span-pink">inoperativo.</span> Ya sea desde <span className="span-yellow">un solo dispositivo atacante (DoS)</span> o <span className="span-yellow">varios (DDoS).</span>
-            </p>
-            
-            <p>
-                <b className="span-yellow">Herramientas:</b> <a href="#" className="span-blue">Metasploit</a>, <a href="#" className="span-blue">Hping3</a>, <a href="#" className="span-blue">Slowloris.</a>
-            </p>
         </>
     );
 }
