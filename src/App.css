@@ -1,0 +1,304 @@
+/*Reglas generales*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+  /* font-weight: lighter; */
+  color: var(--green-primary);
+  background-color: transparent;
+}
+
+:root {
+  --green-primary: #019d76;
+  --green-hover: #03634b;
+
+  --white-primary: #F5F5F5;
+  --white-hover: #757575;
+
+  --white-second: #F5F5F5;
+
+  --pink-primary: #df3079;
+
+  --black-primary: #0d0d0d;
+  --black-hover: #242424;
+
+  --blue-primary: #2e95d3;
+  --blue-hover: #2d5bae;
+
+  --yellow-primary: #e0900c;
+}
+
+body {
+  background-color: var(--black-primary);
+}
+
+/*clase para divs responsives de 1200px*/
+.div-1200 {
+  max-width: 100%;
+  width: 1200px;
+  margin: auto;
+}
+
+/*main*/
+main {
+  padding: 60px 20px 20px 20px;
+}
+
+/*nav*/
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+
+  position: fixed;
+  z-index: 1;
+  padding: 10px 20px;
+  background-color: var(--black-hover);
+}
+
+#nav-movile {
+  display: none;
+}
+
+.ul-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-content: stretch;
+  align-items: stretch;
+  gap: 20px;
+
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+
+  /* border: 1px solid green; */
+  list-style: none;
+}
+
+.icon-nav {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: nowrap;
+}
+
+.a-icon-nav {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+  flex-wrap: nowrap;
+  color: var(--blue-primary);
+  font-size: 18px;
+}
+
+.img-icon-nav {
+  width: 30px;
+}
+
+/*Mode para dark-light*/
+.ul-mode {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  gap: 20px;
+
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+
+  list-style: none;
+  font-size: 18px;
+}
+
+.input-mode {
+  display: none;
+}
+
+.label-mode {
+  cursor: pointer;
+}
+
+/*colores para span*/
+.span-blue {
+  color: var(--blue-primary);
+}
+
+.span-white {
+  color: var(--white-primary);
+}
+
+.span-pink {
+  color: var(--pink-primary);
+}
+
+.span-green {
+  color: var(--green-primary);
+}
+
+.span-yellow {
+  color: var(--yellow-primary);
+}
+
+/*titulo principal*/
+h1 {
+  font-size: 35px;
+  padding: 15px 0px;
+}
+
+/*parrafos*/
+p {
+  font-size: 18px;
+  padding: 15px 0px;
+}
+
+/*subtitulos*/
+h2 {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  gap: 10px;
+
+  font-size: 25px;
+  padding: 15px 0px;
+}
+
+/*subtitulos h3*/
+h3 {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  gap: 10px;
+  
+  font-size: 22px;
+  padding: 15px 0px 15px 25px;
+
+}
+
+/*iconos para sultitulos*/
+.icon-title-two {
+  width: 35px;
+}
+
+.icon-subtitle {
+  color: var(--pink-primary);
+}
+
+/*iconos para subtitulos h3*/
+.icon-subtitle {
+  width: 30px;
+  color: var(--pink-primary);
+  color: red;
+}
+
+/*animacion para animacion cursor*/
+.cursor {
+  display: inline-block;
+  /* Necesario para animar correctamente */
+  font-weight: bold;
+  /* Usa tu variable para mantener consistencia */
+  animation: blink 0.7s steps(1, start) infinite;
+}
+
+/* Animación de parpadeo computacional */
+@keyframes blink {
+
+  0%,
+  100% {
+      opacity: 1;
+      /* Visible */
+  }
+
+  50% {
+      opacity: 0;
+      /* Invisible */
+  }
+}
+
+/*caja de codigo*/
+.div-code {
+  color: var(--white-primary);
+  border-radius: 5px;
+  margin: 10px 0px;
+  padding: 5px 15px 35px 15px;
+  font-size: 18px;
+  background-color: var(--black-hover);
+}
+
+.icon-copy {
+  width: 30px;
+}
+
+.div-icon-copy {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  align-content: center;
+  margin: 4px 0px;
+}
+
+pre {
+  color: var(--white-second);
+}
+
+/*listas ordenadas*/
+.ol-code {
+  margin: 0px 0px 0px 30px;
+  font-size: 18px;
+  color: var(--yellow-primary);
+}
+
+/*Estructura de sitio*/
+.div-structure {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  align-content: start;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 15px;
+
+  margin: 20px 0px 20px 30px;
+}
+
+.a-structure {
+  flex-shrink: 1;
+  flex-grow: 0;
+  flex-basis: auto;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.a-structure:hover {
+  text-decoration:underline;
+}
+
+.a-structure * {
+  font-size: 18px;
+  margin: 0px;
+  padding: 0px;
+}
+
+hr {
+  margin: 20px 0px 0px 0px;
+}
+
+/*Estructura de sitio*/
+.div-structure-row {
+  display: flex;
+  justify-content:start;
+  align-items:center;
+  align-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  max-width: 100%;
+
+  margin: 20px 0px 20px 30px;
+}

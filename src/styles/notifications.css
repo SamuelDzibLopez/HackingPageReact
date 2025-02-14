@@ -1,0 +1,41 @@
+.div-notifications {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    align-content: end;
+    gap: 10px;
+    flex-direction: column;
+
+    position: fixed;
+    padding: 10px;
+    width: 1200px;
+    max-width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    font-size: 18px;
+    z-index: 5;
+}
+
+.notification {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 20px;
+    flex-wrap: nowrap;
+
+    padding: 0px 15px;
+    background-color: yellow;
+    width: 300px;
+    max-width: 100%;
+}
+
+.notification img {
+    width: 20px;
+    cursor: pointer;
+}
+
+.notification p {
+    color: black;
+}

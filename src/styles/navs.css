@@ -1,0 +1,154 @@
+/*nav*/
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+
+    position: fixed;
+    z-index: 1;
+    padding: 10px 20px;
+    background-color: var(--black-hover);
+}
+
+#nav-movile {
+    display: none;
+}
+
+.ul-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-content: stretch;
+    align-items: stretch;
+    gap: 20px;
+
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+
+    /* border: 1px solid green; */
+    list-style: none;
+}
+
+.icon-nav {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: nowrap;
+}
+
+.a-icon-nav {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+    flex-wrap: nowrap;
+    color: var(--blue-primary);
+    font-size: 18px;
+}
+
+.img-icon-nav {
+    width: 30px;
+}
+
+/*Mode para dark-light*/
+.ul-mode {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    gap: 20px;
+
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+
+    list-style: none;
+    font-size: 18px;
+}
+
+.input-mode {
+    display: none;
+}
+
+.label-mode {
+    cursor: pointer;
+}
+
+.menu-movile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+
+    position: fixed;
+    z-index: 3;
+    height: 100vh;
+    width: 100%;
+    background-color: var(--black-hover);
+    opacity: .9;
+    overflow: auto;
+    padding: 10px;
+}
+
+.ul-menu-movile {
+    list-style: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.li-menu-movile a {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 7px;
+    
+    text-decoration: none;
+}
+
+.li-menu-movile img {
+    width: 45px;
+}
+
+.li-menu-movile span {
+    display: inline-block;
+    font-size: 20px;
+
+}
+
+.icon-close {
+    width: 40px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+    cursor: pointer;
+}
+
+a {
+    cursor: pointer;
+}
+
+
+/*media querys*/
+@media (max-width: 900px) {
+    #nav-desktop {
+        display: none;
+    }
+
+    #nav-movile {
+        display: flex;
+    }
+}
