@@ -2,10 +2,10 @@ import React from "react";
 import icon_directory_pink from "./../../sources/icons/icon-directory-pink.svg";
 import icon_directory from "./../../sources/icons/icon-directory.svg";
 
-export default function Principal () {
+export default function Principal (props) {
     return (
         <>
-            <h1 id="main">
+            <h1>
                 Página de <span className="span-pink">información</span> para <span className="span-white">Hacking Ético.<span className="span-white cursor">_</span></span>
             </h1>
 
@@ -51,15 +51,15 @@ export default function Principal () {
             </p>
 
             <div className="div-structure">
-                <a href="#main" className="a-structure">
-                    <h3 className="span-blue">
+                <a className="a-structure" onClick={() => props.funcionModulo(1)} href="#start">
+                    <h3 className="span-blue" href="#start">
                         <img className="icon-subtitle" src={icon_directory} alt=""/>
                         <span className="span-blue"> Inicio.<span className="span-blue cursor">_</span>
                         </span>
                     </h3>
                 </a>
 
-                <a href="#introduccion" className="a-structure">
+                <a className="a-structure" onClick={() => props.funcionModulo(2)} href="#start">
                     <h3 className="span-blue">
                         <img className="icon-subtitle" src={icon_directory} alt=""/>
                         <span className="span-blue"> Introducción.<span className="span-blue cursor">_</span>
@@ -67,7 +67,7 @@ export default function Principal () {
                     </h3>
                 </a>
 
-                <a href="#pasosHacking" className="a-structure">
+                <a className="a-structure" onClick={() => props.funcionModulo(3)} href="#start">
                     <h3 className="span-blue">
                         <img className="icon-subtitle" src={icon_directory} alt=""/>
                         <span className="span-blue"> Pasos del Hacking.<span className="span-blue cursor">_</span>
@@ -75,7 +75,7 @@ export default function Principal () {
                     </h3>
                 </a>
 
-                <a href="#ataques" className="a-structure">
+                <a className="a-structure" onClick={() => props.funcionModulo(4)} href="#start">
                     <h3 className="span-blue">
                         <img className="icon-subtitle" src={icon_directory} alt=""/>
                         <span className="span-blue">Ataques.<span className="span-blue cursor">_</span>
@@ -83,7 +83,7 @@ export default function Principal () {
                     </h3>
                 </a>
 
-                <a href="#herramientas" className="a-structure">
+                <a className="a-structure" onClick={() => props.funcionModulo(5)} href="#start">
                     <h3 className="span-blue">
                         <img className="icon-subtitle" src={icon_directory} alt=""/>
                         <span className="span-blue">Herramientas.<span className="span-blue cursor">_</span>

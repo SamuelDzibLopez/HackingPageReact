@@ -20,12 +20,24 @@ function App() {
 
   let [modulo, setModulo] = useState(1);
   let [menu, setMenu] = useState(false);
+  const [mode, setMode] = useState(true);
 
   let cambiarModulo = (status) => {
     setModulo(status);
     setMenu(false);
   }
 
+    let cambiarMode = () => {
+    setMode(!mode);
+
+    if (mode) {
+        document.documentElement.style.setProperty("--black-primary", "#F5F5F5");
+        document.documentElement.style.setProperty("--white-primary", "#0d0d0d");
+    } else {
+        document.documentElement.style.setProperty("--black-primary", "#0d0d0d");
+        document.documentElement.style.setProperty("--white-primary", "#F5F5F5");
+    }
+  }
   return (
     <div className="App">
 
@@ -46,14 +58,17 @@ function App() {
       <Navs
         funcionModulo = {setModulo}
         funcionMenu = {setMenu}
-
+        funcionMode = {cambiarMode}
+        mode = {mode}
       />
 
       <main className="div-1200">
 
       {(() => {
           if (modulo === 1) {
-            return <Principal/>;
+            return <Principal
+              funcionModulo = {cambiarModulo}
+            />;
           } else if (modulo === 2) {
             return <Introduccion/>;
           } else if (modulo === 3) {

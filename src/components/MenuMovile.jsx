@@ -11,30 +11,30 @@ export default function MenuMovile (props) {
         <h2>ls<span className="span-green cursor">_</span></h2>
         <ul className="ul-menu-movile">
             <li className="li-menu-movile">
-                <a id="a-Main" className="a-nav-movile" onClick={() => props.funcionModulo(1)}>
+                <a className="a-nav-movile" onClick={() => props.funcionModulo(1)} href="#start">
                     <span className="span-blue">&lt;DZEL/&gt;</span>
                 </a>
             </li>
             <li className="li-menu-movile">
-                <a className="a-nav-movile" onClick={() => props.funcionModulo(2)}>
+                <a className="a-nav-movile" onClick={() => props.funcionModulo(2)} href="#start">
                     <img src={icon_directory} alt=""/>
                     <span className="span-blue">Introducción</span>
                 </a>
             </li>
             <li className="li-menu-movile">
-                <a className="a-nav-movile" onClick={() => props.funcionModulo(3)}>
+                <a className="a-nav-movile" onClick={() => props.funcionModulo(3)} href="#start">
                     <img src={icon_directory} alt=""/>
                     <span className="span-blue">Pasos del Hacking</span>
                 </a>
             </li>
             <li className="li-menu-movile">
-                <a className="a-nav-movile" onClick={() => props.funcionModulo(4)}>
+                <a className="a-nav-movile" onClick={() => props.funcionModulo(4)} href="#start">
                     <img src={icon_directory} alt=""/>
                     <span className="span-blue">Ataques</span>
                 </a>
             </li>
             <li className="li-menu-movile">
-                <a className="a-nav-movile" onClick={() => props.funcionModulo(5)}>
+                <a className="a-nav-movile" onClick={() => props.funcionModulo(5)} href="#start">
                     <img src={icon_directory} alt=""/>
                     <span className="span-blue">Herramientas</span>
                 </a>

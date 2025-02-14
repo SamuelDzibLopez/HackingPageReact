@@ -39,10 +39,13 @@ export default function NavMovile (props) {
                 <li>
                     <input type="checkbox" name="mode" id="mode-desktop"className="input-mode"/>
                 </li>
-                <label htmlFor="mode-desktop" className="label-mode">
-                    <span className="span-green" id="span-desktop">
-                        Dark
-                    </span>
+                <label htmlFor="mode-desktop" className="label-mode" onClick={() => props.funcionMode()}>
+                    {
+                        props.mode ? 
+                            <span className="span-pink">Ligth</span> 
+                        :
+                            <span className="span-green">Dark</span>
+                    }
                 </label>
             </ul>
         </nav>
