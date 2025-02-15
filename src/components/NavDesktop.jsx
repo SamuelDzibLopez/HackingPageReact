@@ -6,30 +6,30 @@ export default function NavMovile (props) {
         <nav className="div-1200 nav" id="nav-desktop">
             <ul className="ul-nav">
                 <li className="icon-nav">
-                    <a className="a-icon-nav" onClick={() => props.funcionModulo(1)}>
+                    <a className="a-icon-nav" onClick={() => props.funcionModulo(1)} href="#start">
                         &lt;DZEL/&gt;
                     </a>
                 </li>
                 <li className="icon-nav">
-                    <a className="a-icon-nav" onClick={() => props.funcionModulo(2)}>
+                    <a className="a-icon-nav" onClick={() => props.funcionModulo(2)} href="#start">
                         <img className="img-icon-nav" src={icon_directory} alt=""/>
                         <span className="span-blue">Introducción</span>
                     </a>
                 </li>
                 <li className="icon-nav">
-                    <a className="a-icon-nav" onClick={() => props.funcionModulo(3)}>
+                    <a className="a-icon-nav" onClick={() => props.funcionModulo(3)} href="#start">
                         <img className="img-icon-nav" src={icon_directory} alt=""/>
                         <span className="span-blue">Pasos del Hacking</span>
                     </a>
                 </li>
                 <li className="icon-nav">
-                    <a className="a-icon-nav" onClick={() => props.funcionModulo(4)}>
+                    <a className="a-icon-nav" onClick={() => props.funcionModulo(4)} href="#start">
                         <img className="img-icon-nav" src={icon_directory} alt=""/>
                         <span className="span-blue">Ataques</span>
                     </a>
                 </li>
                 <li className="icon-nav">
-                    <a className="a-icon-nav" onClick={() => props.funcionModulo(5)}>
+                    <a className="a-icon-nav" onClick={() => props.funcionModulo(5)} href="#start">
                         <img className="img-icon-nav" src={icon_directory} alt=""/>
                         <span className="span-blue">Herramientas</span>
                     </a>

@@ -25,7 +25,7 @@ export default function Principal (props) {
                 <b className="span-yellow">Interpretación en Ciberseguridad:</b> En la <span className="span-yellow">Ciberseguridad</span>, para <span className="span-white">garantizar</span> la protección de los <span className="span-pink">sistemas y datos,</span> es fundamental <span className="span-white">anticiparse</span> a <span className="span-pink">posibles ataques</span> mediante <span className="span-blue">estrategias preventivas, entrenamiento constante, monitoreo activo</span> y <span className="span-blue">planes de respuesta efectivos. </span>La <span className="span-white">preparación</span> es clave para <span className="span-white">evitar o mitigar los daños</span> en un entorno digital lleno de <span className="span-pink">riesgos.</span>
             </p>
 
-            <h3 className="span-blue">
+            <h3 className="span-blue"  id="objetivo">
                 <img className="icon-subtitle" src={icon_directory_pink} alt=""/>
                 <span className="span-pink"> Objetivo.<span className="span-pink cursor">_</span>
                 </span>
@@ -39,7 +39,7 @@ export default function Principal (props) {
                 <span className="span-pink">Dentro</span> contenido de este sitio podras encontrar, tanto, <span className="span-white">información</span> sobre <span className="span-blue">conceptos, definiciónes, metodologia del proceso de Hacking Ético, métodos para <span><i className="span-blue">pentesting</i></span></span>, asicomo a su vez, <span className="span-blue">aprendizaje de uso de herramientas practicas</span> para <span className="span-pink">hacking.</span>
             </p>
 
-            <h3 className="span-blue">
+            <h3 className="span-blue" id="estructura">
                 <img className="icon-subtitle" src={icon_directory_pink} alt=""/>
                 <span className="span-pink"> Estructura del sitio.<span className="span-pink cursor">_</span>
                 </span>
@@ -98,7 +98,7 @@ export default function Principal (props) {
             <ol className="ol-code">
                 <li>
                     <p>
-                        <b className="span-blue">Inicio:</b> Información sobre la <span className="span-white">página,</span> tales como <a href="" className="span-yellow">objetivo,</a> <a href="" className="span-yellow">Estructura de sitio</a> e <a href="" className="span-yellow">Información general de sitio.</a>
+                        <b className="span-blue">Inicio:</b> Información sobre la <span className="span-white">página,</span> tales como <a href="#objetivo" className="span-yellow">objetivo,</a> <a href="#estructura" className="span-yellow">Estructura de sitio</a> e <a href="#informacion" className="span-yellow">Información general de sitio.</a>
                     </p>
                 </li>
 
@@ -131,7 +131,7 @@ export default function Principal (props) {
                 ¡Puedes visitar los apartados en el orden de tu gusto!.
             </p>
 
-            <h3 className="span-blue">
+            <h3 className="span-blue" id="informacion">
                 <img className="icon-subtitle" src={icon_directory_pink} alt=""/>
                 <span className="span-pink"> Información General de sitio.<span className="span-pink cursor">_</span></span>
             </h3>
