@@ -145,6 +145,10 @@ export default function Principal (props) {
             </p>
 
             <p>
+                <span className="span-yellow">Nota:</span> Toda la <span className="span-yellow">información</span> recopilada dentro de este sitio, fue obtenida de manera <span className="span-white">publica</span> y <span className="span-white">legal</span>, con la finalidad de ser utilizada de manera <span className="span-white">ética, legal</span> y <span className="span-white">moral</span>; <span className="span-yellow">Nosotros los creadores NO nos hacemos responsables</span> del uso <span className="span-pink">indebido</span> de dicha <span className="span-white">informacion.</span>
+            </p>
+
+            <p>
                 <i className="span-white">— Responable de sitio: Samuel Dzib López (DZEL). Diseñador, desarrollador e información.</i>
             </p>
 

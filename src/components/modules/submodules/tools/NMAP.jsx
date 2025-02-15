@@ -1,12 +1,12 @@
 import React from "react";
 
-import Comand from "../../Comand";
-import Img from "../../Img";
+import Comand from "../../../Comand";
+import Img from "../../../Img";
 
 //Imagenes
-import Img_One from "./../../../sources/imgs/imgKali.PNG"
+import Img_One from "./../../../../sources/imgs/imgKali.PNG"
 
-import icon_directory_pink from "./../../../sources/icons/icon-directory-pink.svg";
+import icon_directory_pink from "./../../../../sources/icons/icon-directory-pink.svg";
 
 export default function NMAP (props) {
     return (
