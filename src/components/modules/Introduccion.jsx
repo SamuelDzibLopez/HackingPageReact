@@ -10,9 +10,7 @@ export default function Introduccion () {
             </h2>
 
             <p>
-                En un <span className="span-yellow">mundo</span> cada vez más <span className="span-pink">conectado,</span> la <span className="span-pink">seguridad digital</span> se ha convertido en una <span className="span-white">preocupación central.</span> Cada día,
-                <span className="span-blue">personas</span> y <span className="span-blue">organizaciones</span> enfrentan <span className="span-pink">riesgos</span> relacionados con el uso de la <span className="span-white">tecnología,</span> desde el <span className="span-pink">robo de datos </span>hasta la
-                <span className="span-pink">interrupción de servicios esenciales.</span> <span className="span-yellow">Proteger la información</span> y <span className="span-yellow">garantizar la confianza</span>  en los <span className="span-pink">sistemas digitales</span> son
+                En un <span className="span-yellow">mundo</span> cada vez más <span className="span-pink">conectado,</span> la <span className="span-pink">seguridad digital</span> se ha convertido en una <span className="span-white">preocupación central.</span> Cada día, <span className="span-blue">personas</span> y <span className="span-blue">organizaciones</span> enfrentan <span className="span-pink">riesgos</span> relacionados con el uso de la <span className="span-white">tecnología,</span> desde el <span className="span-pink">robo de datos </span>hasta la <span className="span-pink">interrupción de servicios esenciales.</span> <span className="span-yellow">Proteger la información</span> y <span className="span-yellow">garantizar la confianza</span>  en los <span className="span-pink">sistemas digitales</span> son
                 desafíos <span className="span-white">fundamentales</span> en la actualidad.
             </p>
 
