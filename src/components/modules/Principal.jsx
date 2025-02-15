@@ -22,7 +22,7 @@ export default function Principal (props) {
             </p>
 
             <p>
-                <b className="span-yellow">Interpretación en Ciberseguridad:</b> En la <span className="span-yellow">Ciberseguridad</span>, para <span className="span-white">garantizar</span> la protección de los <span className="span-pink">sistemas y datos,</span> es fundamental <span className="span-white">anticiparse</span> a <span className="span-pink">posibles ataques</span> mediante <span className="span-blue">estrategias preventivas, entrenamiento constante, monitoreo activo</span> y <span className="span-blue">planes de respuesta efectivos.</span>La <span className="span-white">preparación</span> es clave para <span className="span-white">evitar o mitigar los daños</span> en un entorno digital lleno de <span className="span-pink">riesgos.</span>
+                <b className="span-yellow">Interpretación en Ciberseguridad:</b> En la <span className="span-yellow">Ciberseguridad</span>, para <span className="span-white">garantizar</span> la protección de los <span className="span-pink">sistemas y datos,</span> es fundamental <span className="span-white">anticiparse</span> a <span className="span-pink">posibles ataques</span> mediante <span className="span-blue">estrategias preventivas, entrenamiento constante, monitoreo activo</span> y <span className="span-blue">planes de respuesta efectivos. </span>La <span className="span-white">preparación</span> es clave para <span className="span-white">evitar o mitigar los daños</span> en un entorno digital lleno de <span className="span-pink">riesgos.</span>
             </p>
 
             <h3 className="span-blue">
@@ -111,7 +111,7 @@ export default function Principal (props) {
 
                 <li>
                     <p>
-                        <b className="span-blue">Pasos del Hacking:</b> <span className="span-white">Información</span> y <span className="span-white">explicación</span> de la <span className="span-pink">métodologia util</span> y <span className="span-pink">pasos</span> para el proceso de <i className="span-blue">Hacking.</i>
+                        <b className="span-blue">Pasos del Hacking:</b> <span className="span-white">Información</span> y <span className="span-white">explicación</span> de la <span className="span-pink">métodologia util</span> y <span className="span-pink">pasos</span> para el proceso de <i className="span-blue">Hacking ético.</i>
                     </p>
                 </li>
 
@@ -138,7 +138,7 @@ export default function Principal (props) {
             </h3>
 
             <p>
-                Este <span className="span-yellow">sitio</span> esta desarrollado son la finalidad de <span className="span-white">ayudar a personas</span> que deseen <span className="span-pink">adquirir nuevos conocimientos</span> en el ambito de la <i className="span-yellow">Ciberseguridad</i> y el Hacking Ético. La visualización de esta pagina el <span className="span-blue">gratuita,</span> <span className="span-blue">NO requiere permisos</span> de usos <span className="span-pink">externos,</span> <span className="span-blue">NI almacena información</span> sobre los <span className="span-pink">visitantes,</span> asi como tambien, esta página fue <span className="span-white">desarrollada</span> y <span className="span-white">desplegada</span> <span className="span-blue">SIN fines de lucro.</span>
+                Este <span className="span-yellow">sitio</span> esta desarrollado son la finalidad de <span className="span-white">ayudar a personas</span> que deseen <span className="span-pink">adquirir nuevos conocimientos</span> en el ambito de la <i className="span-yellow">Ciberseguridad</i> y el <i className="span-yellow">Hacking Ético</i>. La visualización de esta pagina el <span className="span-blue">gratuita,</span> <span className="span-blue">NO requiere permisos</span> de usos <span className="span-pink">externos,</span> <span className="span-blue">NI almacena información</span> sobre los <span className="span-pink">visitantes,</span> asi como tambien, esta página fue <span className="span-white">desarrollada</span> y <span className="span-white">desplegada</span> <span className="span-blue">SIN fines de lucro.</span>
             </p>
 
             <p className="span-pink">

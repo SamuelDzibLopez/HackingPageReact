@@ -11,19 +11,16 @@ export default function PasosHacking () {
             </h2>
 
             <p>
-                El <span className="span-yellow">hacking ético</span> es una <span className="span-white">práctica legítima</span> y <span className="span-white">autorizada</span> cuyo objetivo es <span className="span-blue">evaluarla seguridad</span> de <span className="span-pink">sistemas, redes</span> o
-                <span className="span-pink">aplicaciones</span> mediante la <span className="span-white">simulación</span> de posibles <span className="span-pink">ataques cibernéticos.</span>
+                El <span className="span-yellow">hacking ético</span> es una <span className="span-white">práctica legítima</span> y <span className="span-white">autorizada</span> cuyo objetivo es <span className="span-blue">evaluarla seguridad</span> de <span className="span-pink">sistemas, redes</span> o <span className="span-pink">aplicaciones</span> mediante la <span className="span-white">simulación</span> de posibles <span className="span-pink">ataques cibernéticos.</span>
             </p>
 
             <p>
                 A diferencia de los <span className="span-pink">hackers malintencionados,</span> conocidos como <i className="span-white">black hat hackers,</i> los <span className="span-white">hackers éticos</span> trabajan dentro de
-                los <span className="span-white">límites legales</span> y <span className="span-white">éticos,</span> con el propósito de <span className="span-blue">identificar</span> y <span className="span-blue">solucionar vulnerabilidades</span> antes de que sean <span className="span-white">explotadas</span>
-                por <span className="span-pink">actores maliciosos.</span>
+                los <span className="span-white">límites legales</span> y <span className="span-white">éticos,</span> con el propósito de <span className="span-blue">identificar</span> y <span className="span-blue">solucionar vulnerabilidades</span> antes de que sean <span className="span-white">explotadas</span> por <span className="span-pink">actores maliciosos.</span>
             </p>
 
             <p>
-                El <span className="span-yellow">proceso</span> de <span className="span-white">hacking ético</span> sigue una <span className="span-pink">metodología estructurada</span> y <span className="span-pink">aprobada</span> similar a la utilizada por <span className="span-white">atacantes reales,</span>
-                pero con fines <span className="span-pink">constructivos.</span>
+                El <span className="span-yellow">proceso</span> de <span className="span-white">hacking ético</span> sigue una <span className="span-pink">metodología estructurada</span> y <span className="span-pink">aprobada</span> similar a la utilizada por <span className="span-white">atacantes reales,</span> pero con fines <span className="span-pink">constructivos.</span>
             </p>
 
             <p>
@@ -47,8 +44,7 @@ export default function PasosHacking () {
 
                 <li>
                     <p>
-                        <b className="span-yellow">Fase de Acceso Inicial:</b> En esta <span className="span-white">etapa,</span> se intenta <span className="span-pink">explotar las vulnerabilidades encontradas</span> para obtener <span className="span-white">acceso no autorizado</span> al
-                        <span className="span-blue">sistema</span> o <span className="span-blue">red.</span> El <span className="span-white">objetivo</span> de esta fase es <span className="span-blue">acceder</span> y <span className="span-blue">demostrar</span> las <span className="span-pink">vulnerabilidades</span> permiten <span className="span-pink">comprometer el sistema.</span>
+                        <b className="span-yellow">Fase de Acceso Inicial:</b> En esta <span className="span-white">etapa,</span> se intenta <span className="span-pink">explotar las vulnerabilidades encontradas</span> para obtener <span className="span-white">acceso no autorizado</span> al <span className="span-blue">sistema</span> o <span className="span-blue">red.</span> El <span className="span-white">objetivo</span> de esta fase es <span className="span-blue">acceder</span> y <span className="span-blue">demostrar</span> las <span className="span-pink">vulnerabilidades</span> permiten <span className="span-pink">comprometer el sistema.</span>
                     </p> 
                 </li>
 
@@ -62,7 +58,7 @@ export default function PasosHacking () {
                 <li>
                     <p>
                         <b className="span-yellow">Fase de Cobertura de Huellas:</b> En esta <span className="span-white">ultima fase,</span> se <span className="span-pink">simula</span> cómo un <span className="span-white">atacante</span> podría <span className="span-pink">ocultar sus actividades</span> para <span className="span-pink">evitar ser detectado.</span> Esto incluye <span className="span-blue">eliminar
-                        registros</span> y <span className="span-blue">rastros</span> que podrían <span className="span-pink">delatar</span> sus <span className="span-pink">acciones</span> y <span className="span-pink">participación.</span>. El <span className="span-white">objetivo</span> es <span className="span-pink">evaluar</span> la <span className="span-blue">capacidad de detección</span> de <span className="span-blue">incidentes del sistema.</span>
+                        registros</span> y <span className="span-blue">rastros</span> que podrían <span className="span-pink">delatar</span> sus <span className="span-pink">acciones</span> y <span className="span-pink">participación</span>. El <span className="span-white">objetivo</span> es <span className="span-pink">evaluar</span> la <span className="span-blue">capacidad de detección</span> de <span className="span-blue">incidentes del sistema.</span>
                     </p> 
                 </li>
             </ol>

@@ -11,16 +11,14 @@ export default function Introduccion () {
 
             <p>
                 En un <span className="span-yellow">mundo</span> cada vez más <span className="span-pink">conectado,</span> la <span className="span-pink">seguridad digital</span> se ha convertido en una <span className="span-white">preocupación central.</span> Cada día,
-                <span className="span-blue">personas</span> y <span className="span-blue">organizaciones</span> enfrentan <span className="span-pink">riesgos</span> relacionados con el uso de la <span className="span-white">tecnología,</span> desde el <span className="span-pink">robo de datos</span>hasta la
+                <span className="span-blue">personas</span> y <span className="span-blue">organizaciones</span> enfrentan <span className="span-pink">riesgos</span> relacionados con el uso de la <span className="span-white">tecnología,</span> desde el <span className="span-pink">robo de datos </span>hasta la
                 <span className="span-pink">interrupción de servicios esenciales.</span> <span className="span-yellow">Proteger la información</span> y <span className="span-yellow">garantizar la confianza</span>  en los <span className="span-pink">sistemas digitales</span> son
                 desafíos <span className="span-white">fundamentales</span> en la actualidad.
             </p>
 
             <p>
                 A medida que la <span className="span-pink">tecnología avanza,</span> también lo hacen las formas en que puede ser utilizada de manera <span className="span-pink">malintencionada</span>.
-                Desde <span className="span-white">correos engañosos</span> hasta <span className="span-white">ataques complejos</span> dirigidos a sistemas críticos, los <span className="span-pink">riesgos</span> son tan variados como las
-                <span className="span-yellow">herramientas</span> que tenemos para <span className="span-blue">prevenirlos.</span> Ante esta realidad, surge la necesidad de comprender cómo funcionan estos
-                <span className="span-pink">riesgos</span> y qué medidas pueden tomarse para protegernos en un entorno digital en constante evolución.
+                Desde <span className="span-white">correos engañosos</span> hasta <span className="span-white">ataques complejos</span> dirigidos a sistemas críticos, los <span className="span-pink">riesgos</span> son tan variados como las <span className="span-yellow">herramientas</span> que tenemos para <span className="span-blue">prevenirlos.</span> Ante esta realidad, surge la necesidad de comprender cómo funcionan estos <span className="span-pink">riesgos</span> y qué medidas pueden tomarse para protegernos en un entorno digital en constante evolución.
             </p>
 
             <p>
@@ -34,9 +32,8 @@ export default function Introduccion () {
             <ul className="ol-code">
                 <li>
                     <p>
-                        <b className="span-yellow">Ciberseguridad:</b> Es la <span className="span-yellow">práctica</span> de <span className="span-white">proteger sistemas, redes</span> y <span className="span-white">datos</span> frente a <span className="span-pink">accesos no autorizados, ataques maliciosos</span>
-                        o <span className="span-pink">daños.</span> Su <span className="span-blue">objetivo principal</span> es <span className="span-pink">garantizar</span> la <span className="span-white">confidencialidad, integridad</span> y <span className="span-white">disponibilidad</span> de la información,
-                        <span className="span-blue">previniendo amenazas</span> que provienen del entorno digital.
+                        <b className="span-yellow">Ciberseguridad:</b> Es la <span className="span-yellow">práctica</span> de <span className="span-white">proteger sistemas, redes</span> y <span className="span-white">datos</span> frente a <span className="span-pink">accesos no autorizados, ataques maliciosos </span>
+                        o <span className="span-pink">daños.</span> Su <span className="span-blue">objetivo principal</span> es <span className="span-pink">garantizar</span> la <span className="span-white">confidencialidad, integridad</span> y <span className="span-white">disponibilidad</span> de la información, <span className="span-blue">previniendo amenazas</span> que provienen del entorno digital.
                     </p>
                 </li>
 
@@ -64,8 +61,7 @@ export default function Introduccion () {
                 <li>
                     <p>
                         <b className="span-yellow">Vulnerabilidad:</b> Una <span className="span-yellow">vulnerabilidad</span> es una <span className="span-white">debilidad</span> o <span className="span-white">fallo</span> en un <span className="span-pink">sistema, red, aplicación</span> o <span className="span-pink">proceso</span> que puede ser <span className="span-blue">explotado por un
-                        atacante</span> para <span className="span-pink">comprometer su seguridad.</span> Estas pueden ser causadas por <span className="span-white">errores de diseño, configuraciones incorrectas</span> o
-                        <span className="span-white">falta de actualizaciones,</span> y representan un <span className="span-blue">punto de entrada</span> para <span className="span-pink"> posibles ataques.</span>
+                        atacante</span> para <span className="span-pink">comprometer su seguridad.</span> Estas pueden ser causadas por <span className="span-white">errores de diseño, configuraciones incorrectas</span> o <span className="span-white">falta de actualizaciones,</span> y representan un <span className="span-blue">punto de entrada</span> para <span className="span-pink"> posibles ataques.</span>
                     </p>
                 </li>
 

@@ -26,9 +26,7 @@ export default function Ataques () {
             </p>
 
             <p>
-                Estas <span className="span-white">amenazas</span> comprometen
-                <span className="span-blue">datos, sistemas</span> y <span className="span-blue">operaciones.</span> En esta <span className="span-pink">sección</span> se describen las <span className="span-blue">categorías de ataques, cómo operan</span> y los
-                <span className="span-blue">métodos</span> que los <span className="span-pink">atacantes</span> emplean para llevarlos a cabo.
+                Estas <span className="span-white">amenazas</span> comprometen <span className="span-blue">datos, sistemas</span> y <span className="span-blue">operaciones.</span> En esta <span className="span-pink">sección</span> se describen las <span className="span-blue">categorías de ataques, cómo operan</span> y los <span className="span-blue">métodos</span> que los <span className="span-pink">atacantes</span> emplean para llevarlos a cabo.
             </p>
 
             <p>
