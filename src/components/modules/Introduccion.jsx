@@ -107,16 +107,14 @@ export default function Introduccion () {
 
                 <li>
                     <p>
-                        <b className="span-yellow">Mitigación:</b> La <span className="span-yellow">mitigación</span> se refiere a las <span className="span-white">acciones</span> y <span className="span-white">medidas implementadas</span> para <span className="span-pink">reducir</span> o <span className="span-pink">eliminar el riesgo</span> asociado con una
-                        <span className="span-blue">vulnerabilidad</span> o <span className="span-blue">amenaza.</span> Esto incluye controles <span className="span-blue">técnicos, procedimientos</span> y <span className="span-blue">políticas</span> que <span className="span-white">disminuyen la probabilidad</span> de
+                        <b className="span-yellow">Mitigación:</b> La <span className="span-yellow">mitigación</span> se refiere a las <span className="span-white">acciones</span> y <span className="span-white">medidas implementadas</span> para <span className="span-pink">reducir</span> o <span className="span-pink">eliminar el riesgo</span> asociado con una <span className="span-blue">vulnerabilidad</span> o <span className="span-blue">amenaza.</span> Esto incluye controles <span className="span-blue">técnicos, procedimientos</span> y <span className="span-blue">políticas</span> que <span className="span-white">disminuyen la probabilidad</span> de
                         que un <span className="span-pink">ataque tenga éxito</span> o el <span className="span-pink">impacto de un incidente.</span>
                     </p>
                 </li>
                 <li>
                     <p>
                         <b className="span-yellow">Impacto:</b> El <span className="span-yellow">impacto</span> es la <span className="span-pink">consecuencia</span> o <span className="span-pink">efecto negativo</span> que un <span className="span-white">riesgo materializado</span>  puede tener sobre los <span className="span-blue">sistemas, la
-                        información, las operaciones</span> o la <span className="span-blue">reputación de una organización.</span> El <span className="span-yellow">impacto</span> puede ser <span className="span-blue">financiero, operativo, legal</span> o
-                        <span className="span-blue">relacionado con la pérdida de confianza</span> de los usuarios.
+                        información, las operaciones</span> o la <span className="span-blue">reputación de una organización.</span> El <span className="span-yellow">impacto</span> puede ser <span className="span-blue">financiero, operativo, legal</span> o <span className="span-blue">relacionado con la pérdida de confianza</span> de los usuarios.
                     </p>
                 </li>
             </ul>

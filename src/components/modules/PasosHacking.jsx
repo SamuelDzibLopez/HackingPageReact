@@ -31,8 +31,7 @@ export default function PasosHacking () {
             <ol className="ol-code">
                 <li>
                     <p>
-                        <b className="span-yellow">Fase de Reconocimiento:</b> Esta es la <span className="span-white">etapa inicial,</span> donde se <span className="span-pink">recopila</span> toda la <span className="span-pink">información posible</span> sobre el <span className="span-white">objetivo</span>. Se identifican
-                        <span className="span-blue">redes, sistemas, aplicaciones, usuarios</span> y posibles <span className="span-blue">puntos de entrada.</span> El <span className="span-white">objetivo</span> es <span className="span-pink">conocer al máximo</span> el <span className="span-pink">entorno objetivo</span> para <span className="span-white">planificar los siguientes pasos.</span>
+                        <b className="span-yellow">Fase de Reconocimiento:</b> Esta es la <span className="span-white">etapa inicial,</span> donde se <span className="span-pink">recopila</span> toda la <span className="span-pink">información posible</span> sobre el <span className="span-white">objetivo</span>. Se identifican <span className="span-blue">redes, sistemas, aplicaciones, usuarios</span> y posibles <span className="span-blue">puntos de entrada.</span> El <span className="span-white">objetivo</span> es <span className="span-pink">conocer al máximo</span> el <span className="span-pink">entorno objetivo</span> para <span className="span-white">planificar los siguientes pasos.</span>
                     </p>
                 </li>
 

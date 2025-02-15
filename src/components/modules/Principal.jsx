@@ -32,8 +32,7 @@ export default function Principal (props) {
             </h3>
 
             <p>
-                El contenido de este <span className="span-yellow">sitio web</span> está <span className="span-pink">diseñado</span> para <span className="span-white">personas que deseen profundizar en sus conocimientos</span> teórico-prácticos sobre <span className="span-pink">Ciberseguridad</span>, así como
-                para <span className="span-white">quienes no poseen experiencia</span> previa pero tienen <span className="span-pink">interés en el tema.</span>
+                El contenido de este <span className="span-yellow">sitio web</span> está <span className="span-pink">diseñado</span> para <span className="span-white">personas que deseen profundizar en sus conocimientos</span> teórico-prácticos sobre <span className="span-pink">Ciberseguridad</span>, así como para <span className="span-white">quienes no poseen experiencia</span> previa pero tienen <span className="span-pink">interés en el tema.</span>
             </p>
 
             <p>
