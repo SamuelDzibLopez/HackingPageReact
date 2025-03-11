@@ -571,13 +571,225 @@ export default function NMAP (props) {
                 </span>
             </h3>
 
-
-
-
-
-
+            <p>
+                Los <span className="span-pink">escaneos</span> por protocolo <span className="span-white">UDP</span> permitien identificar <span className="span-blue">puertos con servicios</span> de protocolo <span className="span-white">UDP</span>.
+            </p>
 
             <p>
+                Para realizar este <span className="span-pink">escaneo</span>, basta con ejecutar un comando con el parametro <span className="span-white">-sU</span>:
+            </p>
+
+            <Comand
+                funcionNotificacion = {props.funcionNotificacion}
+                notifications = {props.notifications}
+                code = "nmap -sU -p<argumento> <dominio-o-ip>"
+            />
+
+            <p>
+                Por <span className="span-white">ejemplo</span>:
+            </p>
+
+            <Comand
+                funcionNotificacion = {props.funcionNotificacion}
+                notifications = {props.notifications}
+                code = "nmap -sU -p1-100 192.168.0.1"
+            />
+
+            <p>
+                Donde se <span className="span-blue">escanearan</span> los <span className="span-pink">primeros 100 puertos</span> por medio de protocolo <span className="span-white">UDP</span>.
+            </p>
+
+            <p>
+                <span className="span-yellow">Nota:</span> Recuerda que <span className="span-yellow">NMAP</span> realiza escaneos por <span className="span-white">TCP</span> y <span className="span-white">TCP/SYN</span> asi que solo podemos <span className="span-pink">encontrar puertos</span> que utilicen <span className="span-white">UDP</span> con ayuda de este parametro <span className="span-white">-sU</span>.
+            </p>
+
+            <h3 className="span-blue">
+                <img className="icon-subtitle" src={icon_directory} alt=""/>
+                <span className="span-blue">Escaneo para detección de SO<span className="span-blue cursor">_</span>
+                </span>
+            </h3>
+
+            <p>
+                Tambien <span className="span-yellow">NMAP</span> nos permite <span className="span-pink">(o al menos tratar)</span> identificar el <span className="span-blue">SO</span> del <spans className="span-white">dispositivo</spans> a escanear:
+            </p>
+
+            <p>
+                Para ello, <span className="span-pink">ejecutamos</span> el <span className="span-white">comando</span> con el parametro <span className="span-white">-O</span>:
+            </p>
+
+            <Comand
+                funcionNotificacion = {props.funcionNotificacion}
+                notifications = {props.notifications}
+                code = "nmap -O <dominio-o-ip>"
+            />
+
+            <p>
+                Un <span className="span-white">ejemplo</span>:
+            </p>
+
+            <Comand
+                funcionNotificacion = {props.funcionNotificacion}
+                notifications = {props.notifications}
+                code = "nmap -O 192.168.1"
+            />
+
+            <p>
+                Este <span className="span-pink">parametro</span> a su vez, va acompañado de otros 2, utiles al momento de escaneo de segmentos de red:
+            </p>
+
+            <p>
+                <span className="span-white">--osscan-limit</span> <span className="span-blue">-></span> <span className="span-pink">Limita el numero de identificaciones de SO de los dispositivos.</span>
+            </p>
+
+            <p>
+                <span className="span-white">--osscan-guess</span> <span className="span-blue">-></span> <span className="span-pink">Intenta a toda consta identificar el SO de los dispositivos.</span>
+            </p>
+
+            <p>
+                Algunos <span className="span-white">ejemplos</span>:
+            </p>
+
+            <Comand
+                funcionNotificacion = {props.funcionNotificacion}
+                notifications = {props.notifications}
+                code = "nmap -O --osscan-limit 192.168.0.0/24"
+            />
+
+            <p>
+                Y:
+            </p>
+
+            <Comand
+                funcionNotificacion = {props.funcionNotificacion}
+                notifications = {props.notifications}
+                code = "nmap -O --osscan-guess 192.168.0.0/24"
+            />
+
+            <h3 className="span-blue">
+                <img className="icon-subtitle" src={icon_directory} alt=""/>
+                <span className="span-blue">Escaneos con velocidad
+                <span className="span-blue cursor">_</span>
+                </span>
+            </h3>
+
+            <p>
+                <span className="span-yellow">NMAP</span> permite modificar el <span className="span-pink">tiempo de escaneos</span> y <span className="span-pink">velocidad</span> de estos.
+            </p>
+
+            <p>
+                Para esto, utilizamos el parametro <span className="span-white">-T</span> acompanado de un argumento que va de <i className="span-white">0</i> a <i className="span-white">5</i>.
+            </p>
+
+            <p>
+                La sintaxis del <span className="span-pink">comando</span> es la siguiente:
+            </p>
+
+            <Comand
+                funcionNotificacion = {props.funcionNotificacion}
+                notifications = {props.notifications}
+                code = "nmap -T<velocidad> <dominio-o-ip>"
+            />
+
+            <p>
+                Como <span className="span-white">ejemplo</span>:
+            </p>
+
+            <Comand
+                funcionNotificacion = {props.funcionNotificacion}
+                notifications = {props.notifications}
+                code = "nmap -T4 192.168.0.1"
+            />
+
+            <h3 className="span-blue">
+                <img className="icon-subtitle" src={icon_directory} alt=""/>
+                <span className="span-blue">Escaneos con tiempo
+                <span className="span-blue cursor">_</span>
+                </span>
+            </h3>
+            
+            <p>
+                Tambien podemos obligar a <span className="span-yellow">NMAP</span> a realizar un tiempo maximo para escaneo.
+            </p>
+
+            <p>
+                Con ayuda del parametro <span className="span-white">--host-timeout</span>:
+            </p>
+
+            <Comand
+                funcionNotificacion = {props.funcionNotificacion}
+                notifications = {props.notifications}
+                code = "nmap --host-timeout <tiempo-maximo> <dominio-o-ip>"
+            />
+
+            <p>
+                Como <span className="span-white">ejemplo</span>:
+            </p>
+
+            <Comand
+                funcionNotificacion = {props.funcionNotificacion}
+                notifications = {props.notifications}
+                code = "nmap --host-timeout 30m 192.168.0.1"
+            />
+
+            <p>
+                O:
+            </p>
+
+            <Comand
+                funcionNotificacion = {props.funcionNotificacion}
+                notifications = {props.notifications}
+                code = "nmap --host-timeout 1h 192.168.0.1"
+            />
+
+            <Comand
+                funcionNotificacion = {props.funcionNotificacion}
+                notifications = {props.notifications}
+                code = "nmap --host-timeout 50s 192.168.0.1"
+            />
+
+            <p>
+                <span className="span-yellow">Nota:</span> Esto es muy util para <span className="span-pink">auditorias</span> o <span className="span-pink">tiempos cortos</span>.
+            </p>
+
+            <h3 className="span-blue">
+                <img className="icon-subtitle" src={icon_directory} alt=""/>
+                <span className="span-blue">Escaneos con rango de paquetes
+                <span className="span-blue cursor">_</span>
+                </span>
+            </h3>
+
+            <p>
+                Con ayuda de los parametros <span className="span-white">--min-rate</span> y <span className="span-white">--max-rate</span> podemos <span className="span-pink">personalizar</span> un <span className="span-blue">rango de envio de paquetes</span> entre el escaneo.
+            </p>
+
+            <p>
+                La <span className="span-white">sintaxis</span>:
+            </p>
+
+            <Comand
+                funcionNotificacion = {props.funcionNotificacion}
+                notifications = {props.notifications}
+                code = "nmap --min-rate <rango-minimo> --max-rate <rango-maximo> <dominio-o-ip>"
+            />
+
+            <p>
+                Como el <span className="span-white">ejemplo siguiente</span>:
+            </p>
+
+            <Comand
+                funcionNotificacion = {props.funcionNotificacion}
+                notifications = {props.notifications}
+                code = "nmap --min-rate 30 --max-rate 300 192.168.0.1"
+            />
+
+            <h3 className="span-blue">
+                <img className="icon-subtitle" src={icon_directory} alt=""/>
+                <span className="span-blue">Exportacion de resultados de escaneos.
+                <span className="span-blue cursor">_</span>
+                </span>
+            </h3>
+
+            {/* <p>
                 Para visualizar:
             </p>
 
@@ -586,7 +798,7 @@ export default function NMAP (props) {
                 alt = {"Imagen 1. NMAP."}
                 title = {"Descripcción de imagen."}
                 text = {"1. Lorem ipsum dolor sit, amet consectetur adipisicing."}
-            />
+            /> */}
         </>
     );
 }
