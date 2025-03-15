@@ -31,7 +31,7 @@ export default function Comand (props) {
                 />
             </div>
             <div className="div-comand">
-                <pre>{props.code}</pre>
+                <p className="span-white-comand">{props.code}</p>
             </div>
         </div>
     );

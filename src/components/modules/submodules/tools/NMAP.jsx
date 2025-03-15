@@ -4,7 +4,26 @@ import Comand from "../../../Comand";
 import Img from "../../../Img";
 
 //Imagenes
-import Img_One from "./../../../../sources/imgs/imgKali.PNG"
+import Img_One from "./../../../../sources/imgs/NMAP/NMAP_01.png";
+import Img_Two from "./../../../../sources/imgs/NMAP/NMAP_02.png";
+import Img_Three from "./../../../../sources/imgs/NMAP/NMAP_03.png";
+import Img_Four from "./../../../../sources/imgs/NMAP/NMAP_04.png";
+import Img_Five from "./../../../../sources/imgs/NMAP/NMAP_05.png";
+import Img_Six from "./../../../../sources/imgs/NMAP/NMAP_06.png";
+import Img_Seven from "./../../../../sources/imgs/NMAP/NMAP_07.png";
+import Img_Eight from "./../../../../sources/imgs/NMAP/NMAP_08.png";
+import Img_Nine from "./../../../../sources/imgs/NMAP/NMAP_09.png";
+import Img_Ten from "./../../../../sources/imgs/NMAP/NMAP_10.png";
+import Img_Eleven from "../../../../sources/imgs/NMAP/NMAP_11.png";
+import Img_Twelve from "../../../../sources/imgs/NMAP/NMAP_12.png";
+import Img_Thirteen from "../../../../sources/imgs/NMAP/NMAP_13.png";
+import Img_Fourteen from "../../../../sources/imgs/NMAP/NMAP_14.png";
+import Img_Fifteen from "../../../../sources/imgs/NMAP/NMAP_15.png";
+import Img_Sixteen from "../../../../sources/imgs/NMAP/NMAP_16.png";
+import Img_Seventeen from "../../../../sources/imgs/NMAP/NMAP_17.png";
+
+
+
 
 import icon_directory_pink from "./../../../../sources/icons/icon-directory-pink.svg";
 import icon_directory from "./../../../../sources/icons/icon-directory.svg";
@@ -38,6 +57,17 @@ export default function NMAP (props) {
                 code = "nmap"
             />
 
+            <p>
+                Imagen de <span className="span-white">ejemplo</span>:
+            </p>
+
+            <Img
+                img = {Img_One}
+                alt = {"Imagen 1. NMAP."}
+                title = {"Descripcción de imagen."}
+                text = {"1. Comando principal de NMAP."}
+            />
+
             <h3 className="span-blue">
                 <img className="icon-subtitle" src={icon_directory} alt=""/>
                 <span className="span-blue"> Preinstalación.<span className="span-blue cursor">_</span>
@@ -56,6 +86,17 @@ export default function NMAP (props) {
                 funcionNotificacion = {props.funcionNotificacion}
                 notifications = {props.notifications}
                 code = "nmap -v"
+            />
+
+            <p>
+                Imagen de <span className="span-white">ejemplo</span>:
+            </p>
+
+            <Img
+                img = {Img_Two}
+                alt = {"Imagen 2. NMAP."}
+                title = {"Descripcción de imagen."}
+                text = {"2. Comando de versión de NMAP."}
             />
 
             <p>
@@ -90,6 +131,17 @@ export default function NMAP (props) {
                 funcionNotificacion = {props.funcionNotificacion}
                 notifications = {props.notifications}
                 code = "nmap -h"
+            />
+
+            <p>
+                Imagen de <span className="span-white">ejemplo</span>:
+            </p>
+
+            <Img
+                img = {Img_Three}
+                alt = {"Imagen 3. NMAP."}
+                title = {"Descripcción de imagen."}
+                text = {"3. Comando de ayuda para NMAP."}
             />
 
             <p>
@@ -132,6 +184,17 @@ export default function NMAP (props) {
                 funcionNotificacion = {props.funcionNotificacion}
                 notifications = {props.notifications}
                 code = "nmap -sn 192.168.0.0/24"
+            />
+
+            <p>
+                Imagen de <span className="span-white">ejemplo</span>:
+            </p>
+
+            <Img
+                img = {Img_Four}
+                alt = {"Imagen 4. NMAP."}
+                title = {"Descripcción de imagen."}
+                text = {"4. Comando de escaneo de red con NMAP."}
             />
 
             <p>
@@ -183,6 +246,17 @@ export default function NMAP (props) {
             />
 
             <p>
+                Imagen de <span className="span-white">ejemplo</span>:
+            </p>
+
+            <Img
+                img = {Img_Five}
+                alt = {"Imagen 5. NMAP."}
+                title = {"Descripcción de imagen."}
+                text = {"5. Escaneos de red con NMAP."}
+            />
+
+            <p>
             <span className="span-yellow">Nota:</span> Lo que <span className="span-white">NO</span> es <span className="span-pink">válido</span> es colocar el <span className="span-white">protocolo de la URL:</span>
             </p>
 
@@ -190,6 +264,17 @@ export default function NMAP (props) {
                 funcionNotificacion = {props.funcionNotificacion}
                 notifications = {props.notifications}
                 code = "nmap https://scanme.nmap.org"
+            />
+
+            <p>
+                Imagen de <span className="span-white">ejemplo</span>:
+            </p>
+
+            <Img
+                img = {Img_Six}
+                alt = {"Imagen 5. NMAP."}
+                title = {"Descripcción de imagen."}
+                text = {"6. Error en escaneos de red con NMAP con protocolo."}
             />
 
             <p>
@@ -224,6 +309,17 @@ export default function NMAP (props) {
             />
 
             <p>
+                Imagen de <span className="span-white">ejemplo</span>:
+            </p>
+
+            <Img
+                img = {Img_Seven}
+                alt = {"Imagen 7. NMAP."}
+                title = {"Descripcción de imagen."}
+                text = {"7. Escaneo de versiones de servicios con NMAP."}
+            />
+
+            <p>
                 <span className="span-yellow">Nota:</span> Este comando permitirá <span className="span-white">visualizar</span>, no solo el <span className="span-pink">tipo de servicio</span> corriendo en un puerto, sino también la <span className="span-pink">versión</span> de este; <span className="span-white">información</span> útil para detección de posibles <span className="span-blue">vulnerabilidades</span> o <span className="span-blue">errores</span>.
             </p>
 
@@ -253,6 +349,17 @@ export default function NMAP (props) {
                 funcionNotificacion = {props.funcionNotificacion}
                 notifications = {props.notifications}
                 code = "nmap -sV --version-intensity 8 192.168.0.1"
+            />
+
+            <p>
+                Imagen de <span className="span-white">ejemplo</span>:
+            </p>
+
+            <Img
+                img = {Img_Eight}
+                alt = {"Imagen 8. NMAP."}
+                title = {"Descripcción de imagen."}
+                text = {"8. Escaneo con intensidad de versiones de servicios con NMAP."}
             />
 
             <h3 className="span-blue">
@@ -290,6 +397,17 @@ export default function NMAP (props) {
             />
 
             <p>
+                Imagen de <span className="span-white">ejemplo</span>:
+            </p>
+
+            <Img
+                img = {Img_Nine}
+                alt = {"Imagen 9. NMAP."}
+                title = {"Descripcción de imagen."}
+                text = {"9. Escaneo de puerto especifico (Puerto 80) con NMAP."}
+            />
+
+            <p>
                 Escaneo de puerto <span className="span-white">80</span> del dispositivo <span className="span-white">192.168.0.1</span>.
             </p>
 
@@ -305,6 +423,17 @@ export default function NMAP (props) {
                 funcionNotificacion = {props.funcionNotificacion}
                 notifications = {props.notifications}
                 code = "nmap -p80,22 192.168.0.1"
+            />
+
+            <p>
+                Imagen de <span className="span-white">ejemplo</span>:
+            </p>
+
+            <Img
+                img = {Img_Ten}
+                alt = {"Imagen 10. NMAP."}
+                title = {"Descripcción de imagen."}
+                text = {"10. Escaneo de múltiples puertos (Puerto 80 y 22) con NMAP."}
             />
 
             <p>
@@ -326,6 +455,17 @@ export default function NMAP (props) {
             />
 
             <p>
+                Imagen de <span className="span-white">ejemplo</span>:
+            </p>
+
+            <Img
+                img = {Img_Eleven}
+                alt = {"Imagen 11. NMAP."}
+                title = {"Descripcción de imagen."}
+                text = {"11. Escaneo de rango de puertos (Puertos del 1 al 100) con NMAP."}
+            />
+
+            <p>
                 Escaneo del rango de puertos del <span className="span-white">1</span> hasta el <span className="span-white">100</span>, del dispositivo <span className="span-white">192.168.0.1</span>.
             </p>
 
@@ -341,6 +481,17 @@ export default function NMAP (props) {
                 funcionNotificacion = {props.funcionNotificacion}
                 notifications = {props.notifications}
                 code = "nmap -sU -sT -pU:111,T:22,80 192.168.0.1"
+            />
+
+            <p>
+                Imagen de <span className="span-white">ejemplo</span>:
+            </p>
+
+            <Img
+                img = {Img_Twelve}
+                alt = {"Imagen 12. NMAP."}
+                title = {"Descripcción de imagen."}
+                text = {"12. Escaneo de rango de puertos por protocolos con NMAP."}
             />
 
             <p>
@@ -422,6 +573,17 @@ export default function NMAP (props) {
             />
 
             <p>
+                Imagen de <span className="span-white">ejemplo</span>:
+            </p>
+
+            <Img
+                img = {Img_Thirteen}
+                alt = {"Imagen 13. NMAP."}
+                title = {"Descripcción de imagen."}
+                text = {"13. Escaneo de rango de puertos con exclusion de puerto (Puerto 1900) con NMAP."}
+            />
+
+            <p>
                 Donde <span className="span-pink">excluimos</span> el puerto <span className="span-white">1900</span> del escaneo
             </p>
 
@@ -433,6 +595,17 @@ export default function NMAP (props) {
                 funcionNotificacion = {props.funcionNotificacion}
                 notifications = {props.notifications}
                 code = "nmap --exclude-ports 1900,80 192.168.0.1"
+            />
+
+            <p>
+                Imagen de <span className="span-white">ejemplo</span>:
+            </p>
+
+            <Img
+                img = {Img_Fourteen}
+                alt = {"Imagen 14. NMAP."}
+                title = {"Descripcción de imagen."}
+                text = {"14. Escaneo de rango de puertos con exclusion de múltiples puertos (Puerto 1900 y 80) con NMAP."}
             />            
 
             <p>
@@ -448,6 +621,17 @@ export default function NMAP (props) {
                 notifications = {props.notifications}
                 code = "nmap --exclude-ports 1-50 192.168.0.1"
             />
+
+            <p>
+                Imagen de <span className="span-white">ejemplo</span>:
+            </p>
+
+            <Img
+                img = {Img_Fifteen}
+                alt = {"Imagen 15. NMAP."}
+                title = {"Descripcción de imagen."}
+                text = {"15. Escaneo de rango de puertos con exclusion de rango de puertos (Del 1 al 50) con NMAP."}
+            /> 
 
             <p>
                 <span className="span-pink">Excluyendo</span> los puertos del rango del <span className="span-white">1-50</span>.
@@ -482,6 +666,17 @@ export default function NMAP (props) {
                 notifications = {props.notifications}
                 code = "nmap --top-ports 200 192.168.0.1"
             />
+
+            <p>
+                Imagen de <span className="span-white">ejemplo</span>:
+            </p>
+
+            <Img
+                img = {Img_Sixteen}
+                alt = {"Imagen 16. NMAP."}
+                title = {"Descripcción de imagen."}
+                text = {"16. Escaneo de 200 puertos mas comunes con NMAP."}
+            /> 
 
             <p>
                 Donde escaneamos solo los <span className="span-pink">top 200 puertos más comunes</span>.
@@ -526,6 +721,17 @@ export default function NMAP (props) {
             />
 
             <p>
+                Imagen de <span className="span-white">ejemplo</span>:
+            </p>
+
+            <Img
+                img = {Img_Seventeen}
+                alt = {"Imagen 17. NMAP."}
+                title = {"Descripcción de imagen."}
+                text = {"17. Escaneo de puertos mas posibles (probabilidad de 40%) con NMAP."}
+            />
+
+            <p>
                 Donde expecificamos que buscaremos <span className="span-pink">puertos que tengan una probabilidad </span> del <span className="span-white">40%</span> de encontrarse <span className="span-blue">abiertos</span>.
             </p>
 
@@ -567,7 +773,7 @@ export default function NMAP (props) {
 
             <h3 className="span-blue">
                 <img className="icon-subtitle" src={icon_directory} alt=""/>
-                <span className="span-blue">Escaneo con protocolo UDP<span className="span-blue cursor">_</span>
+                <span className="span-blue">Escaneo con protocolo UDP.<span className="span-blue cursor">_</span>
                 </span>
             </h3>
 
@@ -605,7 +811,7 @@ export default function NMAP (props) {
 
             <h3 className="span-blue">
                 <img className="icon-subtitle" src={icon_directory} alt=""/>
-                <span className="span-blue">Escaneo para detección de SO<span className="span-blue cursor">_</span>
+                <span className="span-blue">Escaneo para detección de SO.<span className="span-blue cursor">_</span>
                 </span>
             </h3>
 
@@ -667,7 +873,7 @@ export default function NMAP (props) {
 
             <h3 className="span-blue">
                 <img className="icon-subtitle" src={icon_directory} alt=""/>
-                <span className="span-blue">Escaneos con velocidad
+                <span className="span-blue">Escaneos con velocidad.
                 <span className="span-blue cursor">_</span>
                 </span>
             </h3>
@@ -702,7 +908,7 @@ export default function NMAP (props) {
 
             <h3 className="span-blue">
                 <img className="icon-subtitle" src={icon_directory} alt=""/>
-                <span className="span-blue">Escaneos con tiempo
+                <span className="span-blue">Escaneos con tiempo.
                 <span className="span-blue cursor">_</span>
                 </span>
             </h3>
@@ -753,7 +959,7 @@ export default function NMAP (props) {
 
             <h3 className="span-blue">
                 <img className="icon-subtitle" src={icon_directory} alt=""/>
-                <span className="span-blue">Escaneos con rango de paquetes
+                <span className="span-blue">Escaneos con rango de paquetes.
                 <span className="span-blue cursor">_</span>
                 </span>
             </h3>

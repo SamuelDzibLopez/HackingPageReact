@@ -135,6 +135,12 @@ main {
   color: var(--white-primary);
 }
 
+.span-white-comand {
+  color: #FFFF;
+  font-size: 18px;
+  padding: 0px 0px;
+}
+
 .span-pink {
   color: var(--pink-primary);
 }
