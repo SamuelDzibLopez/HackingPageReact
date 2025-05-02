@@ -470,7 +470,6 @@ export default function HYDRA (props) {
                 code={`hydra -l admin -P /usr/share/wordlists/rockyou.txt -s 80 http-post-form://192.168.0.105/dvwa/login.php:'username=^USER^&password=^PASS^&Login=Login':'Login failed'`}
              />
 
-
             <p>
                 Donde:
             </p>

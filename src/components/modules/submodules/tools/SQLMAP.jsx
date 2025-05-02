@@ -151,7 +151,7 @@ export default function SQLMAP (props) {
             </h3>
 
             <p>
-               Si utilizamos el parametro <i className="span-white">--batch</i>, este significa que <span className="span-pink">aceptamos todas las opciones por defecto</span> (modo no interactivo).
+                Si utilizamos el parametro <i className="span-white">--batch</i>, este significa que <span className="span-pink">aceptamos todas las opciones por defecto</span> (modo no interactivo).
             </p>
 
             <p>

@@ -6,7 +6,7 @@ import icon_directory_pink from "./../../../sources/icons/icon-directory-pink.sv
 
 //Herramientas
 import NMAP from "./tools/NMAP.jsx";
-import H2 from "./tools/H2.jsx";
+import WFUZZ from "./tools/WFUZZ.jsx";
 
 export default function Escaneo (props) {
 
@@ -41,7 +41,7 @@ export default function Escaneo (props) {
                 <a className="a-structure" onClick={() => setHerramienta(2)}>
                     <h3 className="span-blue">
                         <img className="icon-subtitle" src={icon_directory_pink} alt=""/>
-                        <span className="span-pink"> H2.<span className="span-pink cursor">_</span>
+                        <span className="span-pink"> WFUZZ.<span className="span-pink cursor">_</span>
                         </span>
                     </h3>
                 </a>
@@ -60,7 +60,7 @@ export default function Escaneo (props) {
                         notifications = {props.notifications}
                     />;
                 } else if (herramienta === 2) {
-                    return <H2
+                    return <WFUZZ
                     funcionNotificacion = {props.funcionNotificacion}
                     notifications = {props.notifications}
                     />;
