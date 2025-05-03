@@ -412,7 +412,7 @@ export default function WFUZZ (props) {
             />
 
             <p>
-                <span className="span-white">Ejemplo</span> :
+                <span className="span-white">Ejemplo</span>:
             </p>
 
             <Comand

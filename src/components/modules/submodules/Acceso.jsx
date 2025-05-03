@@ -5,8 +5,8 @@ import icon_directory_pink from "./../../../sources/icons/icon-directory-pink.sv
 
 //Herramientas
 import HYDRA from "./tools/HYDRA.jsx";
-import H2 from "./tools/H2.jsx";
 import SQLMAP from "./tools/SQLMAP.jsx";
+import ZPHISHER from "./tools/ZPHISHER.jsx";
 
 export default function Escaneo (props) {
 
@@ -45,6 +45,14 @@ export default function Escaneo (props) {
                         </span>
                     </h3>
                 </a>
+
+                <a className="a-structure" onClick={() => setHerramienta(3)}>
+                    <h3 className="span-blue">
+                        <img className="icon-subtitle" src={icon_directory_pink} alt=""/>
+                        <span className="span-pink"> ZPHISHER.<span className="span-pink cursor">_</span>
+                        </span>
+                    </h3>
+                </a>
             </div>
 
             <hr className="cursor"/>
@@ -61,6 +69,11 @@ export default function Escaneo (props) {
                     />;
                 } else if (herramienta === 2) {
                     return <SQLMAP
+                    funcionNotificacion = {props.funcionNotificacion}
+                    notifications = {props.notifications}
+                    />;
+                } else if (herramienta === 3) {
+                    return <ZPHISHER
                     funcionNotificacion = {props.funcionNotificacion}
                     notifications = {props.notifications}
                     />;
