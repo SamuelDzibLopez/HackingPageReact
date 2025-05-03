@@ -110,7 +110,7 @@ export default function ZPHISHER (props) {
             </p>
 
             <p>
-                <span className="span-pink">Ingresar</span> al <span className="span-white">Ingresar</span> de la <span className="span-pink">herramienta</span>.
+                <span className="span-pink">Ingresar</span> al <span className="span-white">directorio</span> de la <span className="span-pink">herramienta</span>.
             </p>
 
             <Comand
@@ -186,7 +186,7 @@ export default function ZPHISHER (props) {
             </h3>
 
             <p>
-                El <span className="span-white">uso de la herramienta</span> es <span className="span-pink">intiude</span> la herramienta, veamos los <span className="span-white">pasos</span>:
+                El <span className="span-white">uso de la herramienta</span> es <span className="span-pink">intuitiva</span>, veamos los <span className="span-white">pasos</span>:
             </p>
 
             <p>

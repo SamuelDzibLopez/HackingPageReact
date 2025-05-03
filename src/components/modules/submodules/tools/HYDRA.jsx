@@ -86,7 +86,7 @@ export default function HYDRA (props) {
 
             <h3 className="span-blue">
                 <img className="icon-subtitle" src={icon_directory} alt=""/>
-                <span className="span-blue"> Instalación a Hydra.<span className="span-blue cursor">_</span>
+                <span className="span-blue"> Instalación de Hydra.<span className="span-blue cursor">_</span>
                 </span>
             </h3>
 
