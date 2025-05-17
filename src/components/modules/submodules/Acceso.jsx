@@ -7,12 +7,12 @@ import icon_directory_pink from "./../../../sources/icons/icon-directory-pink.sv
 import HYDRA from "./tools/HYDRA.jsx";
 import SQLMAP from "./tools/SQLMAP.jsx";
 import ZPHISHER from "./tools/ZPHISHER.jsx";
+import JOHNTHERIPPER from "./tools/ JOHNTHERIPPER.jsx";
 
 export default function Escaneo (props) {
 
     const [herramienta, setHerramienta] = useState(1)
     
-
     return (
         <>
             <h3 className="span-blue">
@@ -53,6 +53,14 @@ export default function Escaneo (props) {
                         </span>
                     </h3>
                 </a>
+
+                <a className="a-structure" onClick={() => setHerramienta(4)}>
+                    <h3 className="span-blue">
+                        <img className="icon-subtitle" src={icon_directory_pink} alt=""/>
+                        <span className="span-pink"> JOHN THE RIPPER.<span className="span-pink cursor">_</span>
+                        </span>
+                    </h3>
+                </a>
             </div>
 
             <hr className="cursor"/>
@@ -74,6 +82,11 @@ export default function Escaneo (props) {
                     />;
                 } else if (herramienta === 3) {
                     return <ZPHISHER
+                    funcionNotificacion = {props.funcionNotificacion}
+                    notifications = {props.notifications}
+                    />;
+                } else if (herramienta === 4) {
+                    return <JOHNTHERIPPER
                     funcionNotificacion = {props.funcionNotificacion}
                     notifications = {props.notifications}
                     />;
